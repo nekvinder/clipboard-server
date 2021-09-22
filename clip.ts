@@ -6,13 +6,13 @@ app.listen(8081, () => {
   console.log("Application started and Listening on port 8081");
 });
 
-app.get("/", (req, res) => {
+app.get("/", (req: any, res: any) => {
   const val = clipboardy.readSync();
 
   res.send(
     `<html>
     <style>
-    *{font-size:80px}
+    *{font-size:70px}
     </style>
    
     <center><button id="search">Search</button></center>
