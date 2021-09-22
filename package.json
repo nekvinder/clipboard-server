@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve:clip": "nodemon clip.ts",
-    "serve:screen": "nodemon screenshot.ts"
+    "clip": "nodemon clip.ts",
+    "screen": "nodemon screenshot.ts"
   },
   "author": "",
   "license": "ISC",

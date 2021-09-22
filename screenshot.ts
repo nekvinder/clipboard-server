@@ -3,8 +3,10 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 
-app.listen(8082, () => {
-  console.log("Application started and Listening on port 8082");
+const port = 8082;
+
+app.listen(port, () => {
+  console.log("screen on " + port);
 });
 
 app.get("/", async (req: any, res: any) => {
