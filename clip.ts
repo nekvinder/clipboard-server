@@ -2,8 +2,9 @@ const clipboardy = require("clipboardy");
 const express = require("express");
 const app = express();
 
-app.listen(8081, () => {
-  console.log("clip on " + 8081);
+const port = 8081;
+app.listen(port, () => {
+  console.log("clip on " + port);
 });
 
 app.get("/", (req: any, res: any) => {
